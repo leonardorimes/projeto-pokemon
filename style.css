@@ -1,0 +1,365 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+}
+
+body{
+    background-color:teal;
+}
+
+
+
+.page{
+    font-family: 'Montserrat';
+
+    width: 100%;
+    height: 100%;
+}
+
+.page#blur.active{
+    filter: blur(5px);
+    pointer-events: none;
+    user-select: none;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+header img {
+    width: 25.6rem;
+    height: 13.4rem;
+}
+
+header p {
+    
+    font-weight: 700;
+    font-size: 2.2rem;
+    line-height: 3.9rem;
+    color: #FFFFFF;
+    text-shadow: 2px 3px 2px #000;
+}
+
+main{
+    width: 100%;
+    display: grid;
+    gap:0.5rem;
+    place-items: center;
+}
+
+.card{
+
+    position: relative;
+
+    width: clamp(20rem, 45rem, 50rem);
+    height: 45.5rem;
+    border-radius: 2.2rem;
+    border: 1.4rem solid #FFE165;
+    gap: 8px;
+    display: grid;
+    place-items: center;
+    animation: top  1s ease-out;
+    
+
+}
+
+.card .header h1 {
+    font-size: 3rem;
+}
+
+.card .header{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 70px;
+   
+        position: relative;
+        top: 10px;
+        
+  
+    
+}
+
+
+.card .header p{
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 2.5rem;
+    line-height: 3.9rem;
+    display: flex;
+    align-items: center;
+}
+
+.card .header p span{
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 4rem;
+    line-height: 4.9rem;
+    
+}
+
+.card .main{
+    width: 41.2rem;
+    text-align: center;
+
+    position: relative;
+    top: 2px;
+}
+
+.card .main p {
+    padding: 0.8rem;
+}
+
+.card .evolution {
+    margin-bottom: 0.2rem;
+
+    position: relative;
+    top: 2px;
+
+}
+
+.card .evolution h2{
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.card .evolution .choice{
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center;
+    
+
+}
+
+.card .evolution .choice:nth-child(2){
+    width: 10rem;
+   
+}
+
+.card-squirtel {
+    background: linear-gradient(180deg, #21AAE2 0%, #0EAEE5 100%);
+
+}
+
+.card-charmander{
+    background: linear-gradient(180deg, #E22121 0%, #EF9A9A 100%);
+
+}
+
+.card-bulbasaur{
+    background: linear-gradient(180deg, #5BD159 0%, #AEAEAE 100%);
+
+}
+
+.card-bulbasaur .evolution img {
+    width: 15.3rem;
+    height: 7.5rem; 
+}
+
+.card-charmander .evolution img {
+    width: 15.5rem;   
+    height: 6.3rem;
+}
+
+.card-squirtel .evolution img {
+    width: 12.9rem;
+    height: 7.4rem;
+}
+
+.btnChoose{
+    cursor: pointer;
+}
+
+nav {
+    margin-top: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15rem;
+}
+
+nav img {
+    width: clamp(2rem, 9.8rem, 10rem);
+    height: 11rem;
+}
+
+.hide {
+    display: none;
+}
+
+/* Animations */
+
+nav a img:hover{
+    transform: translateY(-12px);
+    transition: 0.5s;
+    transition-timing-function: ease-out;
+    transition-delay: 0.2;
+}
+
+
+
+  @keyframes top {
+    0% {
+        opacity: 0;
+      transform:  translateY(-200px)
+    }
+
+    100% {
+        opacity: 1;
+        transform:  translateY(0px)
+      }
+
+
+  }
+
+  @media (max-width: 1400px) {
+    header{flex-direction: column;
+    margin-bottom: 2rem;
+    }
+    main {
+        grid-template-areas: "NAV CARD CARD"
+                             "NAV CARD CARD"
+                             "NAV CARD CARD";
+        padding: 0.5rem;
+
+    }       
+
+    nav {
+        grid-area: NAV;
+        margin-top: 80px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        flex-direction: column;
+    }
+
+    .card {
+        grid-area: CARD;
+        
+
+            position: relative;
+        
+    }
+}
+
+
+
+  @media (max-width: 650px){
+    .card {
+      
+        
+            width: 30rem;
+            
+            
+      
+    }
+    .card .header{
+        gap: 5px;
+        
+
+    }
+
+    .card .header h1 {
+        font-size: 2rem;
+    }
+
+    .card .header p {
+
+        font-size: 2rem;
+   
+    }
+
+    .card .header p span {
+
+        font-size: 3rem;
+
+    }
+    .card .main {
+        width: 30rem;
+        padding: 0.5rem;
+    
+    }
+
+    .card .main img{
+        width: 25rem;
+    }
+
+    .card-charmander .evolution img {
+        height: 9rem;
+        width: 20.5rem;   
+    }
+
+    header p{
+            
+        font-size:2rem;
+        
+    }
+
+
+
+    /* popup  */
+
+    
+}
+#popup {
+    
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60rem;
+    padding: 50px;
+    box-shadow: 0 5px 30px rgba(0,0,0,0.30);
+    background: #ffffff;
+    display: grid;
+    place-items: center;
+    font-size: 2.2rem;
+    
+
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+#popup.active{
+    top: 50%;
+    visibility: visible;
+    opacity: 1;
+    transition: 0.5s;
+}
+
+#popup img{
+    width: 3.6rem;
+    height: 3.6rem;
+}
+
+#btnOk{
+    margin-top: 2.2rem;
+    display: grid;
+    place-items: center;
+    font-size:15px;
+    font-family:Arial;
+    width:140px;
+    height:50px;
+    border-width:1px;
+    text-align:center;
+    font-size: 2.2rem;
+    color:#fff;
+    border-color:#d02718;
+    font-weight:bold;
+    border-top-left-radius:18px;
+    border-top-right-radius:18px;
+    border-bottom-left-radius:18px;
+    border-bottom-right-radius:18px;
+    box-shadow: 3px 4px 0px 0px #8a2a21;
+    text-shadow: 0px 1px 0px #810e05;
+    background:linear-gradient(#c62d1f, #f24437);
+}
