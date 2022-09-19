@@ -11,9 +11,9 @@ const ok = document.querySelector('#btnOk');
 const btnChoose = document.querySelectorAll('.btnChoose');
 const Pokemonchoice = document.querySelector('.Pokemonchoice');
 
-const bulbasaurAudio = new Audio("/sounds/Bulbasaur.wav");
-const charmanderAudio  = new Audio("/sounds/charmander.wav");
-const squirtelAudio  = new Audio("/sounds/squirtel.wav");
+const bulbasaurAudio = new Audio("./sounds/Bulbasaur.wav");
+const charmanderAudio  = new Audio("./sounds/charmander.wav");
+const squirtelAudio  = new Audio("./sounds/squirtel.wav");
 
 btnSquirtel.addEventListener('click', () => {
     cardBulbasaur.classList.add('hide');
