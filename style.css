@@ -187,7 +187,7 @@ nav {
 
 nav img {
     width: clamp(2rem, 9.8rem, 10rem);
-    height: 11rem;
+    
 }
 
 .hide {
@@ -250,67 +250,8 @@ nav a img:hover{
     }
 }
 
-
-
-  @media (max-width: 650px){
-    .card {
-      
-        
-            width: 30rem;
-            
-            
-      
-    }
-    .card .header{
-        gap: 5px;
-        
-
-    }
-
-    .card .header h1 {
-        font-size: 2rem;
-    }
-
-    .card .header p {
-
-        font-size: 2rem;
-   
-    }
-
-    .card .header p span {
-
-        font-size: 3rem;
-
-    }
-    .card .main {
-        width: 30rem;
-        padding: 0.5rem;
-    
-    }
-
-    .card .main img{
-        width: 25rem;
-    }
-
-    .card-charmander .evolution img {
-        height: 9rem;
-        width: 20.5rem;   
-    }
-
-    header p{
-            
-        font-size:2rem;
-        
-    }
-
-
-
-    /* popup  */
-
-    
-}
 #popup {
-    
+        
     position: fixed;
     top: 40%;
     left: 50%;
@@ -363,3 +304,122 @@ nav a img:hover{
     text-shadow: 0px 1px 0px #810e05;
     background:linear-gradient(#c62d1f, #f24437);
 }
+
+
+  @media (max-width: 650px){
+    .card {
+      
+        
+            width: 30rem; 
+    }
+    .card .header{
+        gap: 5px;
+        
+
+    }
+
+    .card .header h1 {
+        font-size: 2rem;
+    }
+
+    .card .header p {
+
+        font-size: 2rem;
+   
+    }
+
+    .card .header p span {
+
+        font-size: 3rem;
+
+    }
+    .card .main {
+        width: 30rem;
+        padding: 0.5rem;
+    
+    }
+
+    .card .main img{
+        width: 25rem;
+    }
+
+    .card-charmander .evolution img {
+        height: 9rem;
+        width: 20.5rem;   
+    }
+
+    header p{
+            
+        font-size:2rem;
+        
+    }
+
+    #popup{
+
+        width: 40rem;
+    }
+
+    @media (max-width: 420px){
+        
+        main ,header{
+            padding: 1rem;
+        }
+
+        .card {
+                max-width: 25rem; 
+        }
+        .card .header{
+            gap: 5px;
+            
+    
+        }
+    
+        .card .header h1 {
+            font-size: 2rem;
+        }
+    
+        .card .header p {
+    
+            font-size: 2rem;
+       
+        }
+    
+        .card .header p span {
+    
+            font-size: 2rem;
+    
+        }
+        .card .main {
+            width: 20rem;
+            padding: 0.5rem;
+        
+        }
+    
+        .card .main img{
+            width: 20rem;
+        }
+    
+        .card-charmander .evolution img {
+            width: 15rem;   
+        }
+    
+        header p{
+                
+            font-size:2rem;
+            
+        }
+
+        nav img {
+            width: clamp(2rem, 8rem, 10rem);
+            
+        }
+    
+        #popup{
+    
+            width: 10rem;
+        }
+
+    
+}
+
+  }
