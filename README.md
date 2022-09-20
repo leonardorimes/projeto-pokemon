@@ -5,10 +5,10 @@ https://user-images.githubusercontent.com/67798915/190937304-db1cd2e7-4ffd-4538-
 
 >trilha explorer
 
-Projeto construído com os conhecimentos adquiridos até a land 06 da trilha explorer Rockeseat
+Projeto construído com os conhecimentos adquiridos até o Stage 05 da trilha explorer Rocketseat
 
 
-[Clique aqui para acessar](https://leonardorimes.github.io/nlw-esports-explorer/)
+[Clique aqui para acessar](https://leonardorimes.github.io/projeto-pokemon/)
 
 
 ## 🔨 tecnologias 
