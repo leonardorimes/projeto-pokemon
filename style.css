@@ -362,7 +362,7 @@ nav a img:hover{
     @media (max-width: 420px){
         
         main ,header{
-            padding: 1rem;
+            padding: 0 1rem;
         }
 
         .card {
